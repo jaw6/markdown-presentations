@@ -1,0 +1,164 @@
+---
+---
+
+$light-color: #ECEFF3;
+$border-color: #50A952;
+$text-color: #53585F;
+
+$normal-font: "Source Sans Pro";
+
+body {
+  font-family: $normal-font;
+}
+
+//
+.title-slide {
+  text-align: center;
+  padding-top: 150px;
+
+  .mega-octicon {
+    font-size: 200px;
+    color: #BEC0C3;
+  }
+}
+
+.section-title-slide {
+  padding-left: 25%;
+  padding-top: 15%;
+  color: #53585F;
+
+  h1 {
+    font-weight: bold;
+  }
+
+  .mega-octicon {
+    float: left;
+    margin-left: -20%;
+
+    border: 2px solid $border-color;
+    border-radius: 100%;
+    padding: 50px;
+    color: #52575E;
+  }
+}
+
+.body-slide, .bullet-slide, .code-slide {
+  padding-top: 128px;
+  font-size: 36px;
+
+  h1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    font-size: 36px;
+    padding: 18px 24px;
+
+    .octicon {
+      float: right;
+
+      border: 1px solid $border-color;
+      padding: 18px;
+      margin: -4px 0;
+      border-radius: 100%;
+    }
+  }
+}
+
+.bullet-slide {
+  .column {
+    display: table-cell;
+    padding: 36px;
+    text-align: center;
+  }
+
+  .mega-octicon {
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    text-align: center;
+    display: inline-block;
+    border: 2px solid $border-color;
+    margin: -4px 0;
+    border-radius: 100%;
+  }
+
+  h2 {
+    font-weight: bold !important;
+    color: #A7AAA9;
+    text-transform: uppercase;
+  }
+}
+
+// img {
+//   max-width: 850px;
+// }
+
+
+// Remark styles
+
+.remark-slide-container {
+  background: #A2A9B3;
+}
+
+.remark-slide {
+  color: $text-color;
+
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-weight: 100;
+    widows: 2;
+    orphans: 2;
+
+    & + p {
+      margin-top: 0;
+    }
+  }
+
+  footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    padding: 12px 24px;
+    text-align: left;
+    font-size: 14px;
+    line-height: 24px;
+
+    .octicon-mark-github {
+      color: #989798;
+    }
+  }
+
+  li {
+    font-weight: bold;
+  }
+
+  li li {
+    font-weight: normal;
+    font-size: 0.85em;
+  }
+
+  li li li {
+    font-weight: 100;
+  }
+}
+
+.remark-slide-content {
+  background-color: $light-color;
+}
+
+.remark-slide-number {
+  font-size: 16px;
+}
+
+// Syntax Highlighting
+.hljs-default .hljs {
+  padding: 2em;
+  background: #fff;
+  border-radius: 3px;
+  border-top: 18px solid #D9DCDF;
+  border-radius: 6px;
+}

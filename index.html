@@ -1,0 +1,21 @@
+---
+---
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ page.title }}</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/github.css">
+    <link rel="stylesheet" href="bower_components/octicons/octicons/octicons.css">
+    <script type="text/javascript" src="http://0.0.0.0:35729/livereload.js"></script>
+
+    </script>
+  </head>
+  <body>
+    <textarea id="source">{% include_relative slides.md %}</textarea>
+    <script src="bower_components/remark/out/remark.min.js"></script>
+    <script>
+      var slideshow = remark.create({ratio:"16:9"});
+    </script>
+  </body>
+</html>
