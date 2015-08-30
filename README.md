@@ -45,7 +45,7 @@ Lorem ipsum dolor sit amet
 ![Screenshot of content slide](https://cloud.githubusercontent.com/assets/173/9566042/79a8f4ac-4ec0-11e5-9285-7a1138c7434f.png)
 
 ```markdown
-template: body
+template: content
 
 # Title Text .octicon.octicon-mark-github[]
 
@@ -61,7 +61,7 @@ template: body
 ![Screenshot of syntax highlighting](https://cloud.githubusercontent.com/assets/173/9566046/b79db4be-4ec0-11e5-9084-f1e3a21dd3aa.png)
 
 ```
-template: body
+template: content
 
 # Title Text .octicon.octicon-mark-github[]
 

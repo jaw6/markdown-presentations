@@ -20,7 +20,7 @@ layout: true
 
 ---
 
-name: body
+name: content
 class: title-top
 layout: true
 

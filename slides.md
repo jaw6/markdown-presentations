@@ -19,7 +19,7 @@ Lorem ipsum dolor sit amet
 
 ---
 
-template: body
+template: content
 
 # Title Text .octicon.octicon-mark-github[]
 
