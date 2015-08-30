@@ -11,9 +11,13 @@ body {
   font-family: $normal-font;
 }
 
-.remark-slide-content {
+.remark-slide {
   color: $text-color;
   background-color: $light-color;
+}
+
+.remark-slide-content {
+  background-color: inherit;
 
   h1, h2, h3, h4, h5, h6 {
     margin: 0;
@@ -115,8 +119,12 @@ body {
   }
 }
 
+.columns {
+  display: flex;
+  justify-content: center;
+}
+
 .column {
-  display: table-cell;
   padding: 36px;
   text-align: center;
 
