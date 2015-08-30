@@ -1,11 +1,4 @@
-name: title
-class: title-slide
-layout: false
-
-<footer>
-  <span class="octicon octicon-logo-github"></span>
-  <span class="tagline">How people build software</span>
-</footer>
+template: title
 
 .mega-octicon.octicon-mark-github[]
 
@@ -18,32 +11,20 @@ ut labore et dolore magna aliqua
 Ut enim ad minim veniam
 
 ---
-layout: true
-name: background
 
-<footer>
-  <span class="octicon octicon-mark-github"></span>
-  <span class="tagline">How people build software</span>
-</footer>
+template: section
 
----
+.mega-octicon.octicon-mark-github[]
 
-name: section-title
-class: section-title-slide
-layout: background
-
-<span class="mega-octicon octicon-mark-github"></span>
-
-# Title text
+# Title Text
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 ---
-name: body
-class: body-slide
-layout: background
 
-# Title Text <span class="octicon octicon-mark-github"></span>
+template: body
+
+# Title Text .octicon.octicon-mark-github[]
 
 * Body Level One
     * Body Level Two
@@ -52,8 +33,6 @@ layout: background
                 * Body Level Five
 
 ---
-class: bullet-slide
-layout: background
 
 # Title Text <span class="octicon octicon-mark-github"></span>
 
@@ -76,8 +55,6 @@ layout: background
 ]
 
 ---
-class: code-slide
-layout: background
 
 # Title Text .octicon.octicon-mark-github[]
 
@@ -95,8 +72,8 @@ System.out.println("Encrypted text: " + base64Encrypted);
 ```
 
 ---
-class: title-slide
-layout: background
+
+template: title
 
 .mega-octicon.octicon-mark-github[]
 

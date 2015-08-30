@@ -12,10 +12,17 @@
     </script>
   </head>
   <body>
-    <textarea id="source">{% include_relative slides.md %}</textarea>
+    <textarea id="source">
+{% include templates.md %}
+---
+{% include_relative slides.md %}
+    </textarea>
     <script src="bower_components/remark/out/remark.min.js"></script>
     <script>
-      var slideshow = remark.create({ratio:"16:9"});
+      var slideshow = remark.create({
+        ratio: "16:9",
+        slideNumberFormat: "%current%"
+      });
     </script>
   </body>
 </html>

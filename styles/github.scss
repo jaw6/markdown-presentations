@@ -11,10 +11,59 @@ body {
   font-family: $normal-font;
 }
 
-//
+.remark-slide-content {
+  color: $text-color;
+  background-color: $light-color;
+
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-weight: 100;
+    widows: 2;
+    orphans: 2;
+
+    & + p {
+      margin-top: 0;
+    }
+  }
+
+  footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 12px 24px;
+    text-align: left;
+    font-size: 14px;
+    line-height: 24px;
+    background: #fff;
+
+    .octicon-mark-github {
+      color: #989798;
+    }
+
+    .tagline {
+      float: right;
+      margin-right: 38px;
+    }
+  }
+
+  li {
+    font-weight: bold;
+  }
+
+  li li {
+    font-weight: normal;
+    font-size: 0.85em;
+  }
+
+  li li li {
+    font-weight: 100;
+  }
+}
+
 .title-slide {
-  text-align: center;
   padding-top: 150px;
+  text-align: center;
 
   .mega-octicon {
     font-size: 200px;
@@ -22,7 +71,7 @@ body {
   }
 }
 
-.section-title-slide {
+.section-slide {
   padding-left: 25%;
   padding-top: 15%;
   color: #53585F;
@@ -42,7 +91,7 @@ body {
   }
 }
 
-.body-slide, .bullet-slide, .code-slide {
+.title-top {
   padding-top: 128px;
   font-size: 36px;
 
@@ -66,12 +115,10 @@ body {
   }
 }
 
-.bullet-slide {
-  .column {
-    display: table-cell;
-    padding: 36px;
-    text-align: center;
-  }
+.column {
+  display: table-cell;
+  padding: 36px;
+  text-align: center;
 
   .mega-octicon {
     width: 120px;
@@ -91,67 +138,22 @@ body {
   }
 }
 
-// img {
-//   max-width: 850px;
-// }
-
-
 // Remark styles
 
 .remark-slide-container {
   background: #A2A9B3;
 }
 
-.remark-slide {
-  color: $text-color;
-
-  h1, h2, h3, h4, h5, h6 {
-    margin: 0;
-    font-weight: 100;
-    widows: 2;
-    orphans: 2;
-
-    & + p {
-      margin-top: 0;
-    }
-  }
-
-  footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: #fff;
-    padding: 12px 24px;
-    text-align: left;
-    font-size: 14px;
-    line-height: 24px;
-
-    .octicon-mark-github {
-      color: #989798;
-    }
-  }
-
-  li {
-    font-weight: bold;
-  }
-
-  li li {
-    font-weight: normal;
-    font-size: 0.85em;
-  }
-
-  li li li {
-    font-weight: 100;
-  }
-}
-
-.remark-slide-content {
-  background-color: $light-color;
-}
 
 .remark-slide-number {
-  font-size: 16px;
+  font-size: 14px;
+  border: 1px solid #A7AAA9;
+  border-radius: 100%;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  display: inline-block;
+  text-align: center;
 }
 
 // Syntax Highlighting
