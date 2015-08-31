@@ -5,6 +5,7 @@ This template uses the Markdown-driven slideshow tool [remark](http://gnab.githu
 ## Getting Started
 
 0. Run `script/bootstrap`
+0. Edit `_config.yml`
 0. Run `script/server`
 0. visit [localhost:4000](http://localhost:4000)
 0. Edit `slides.md`
