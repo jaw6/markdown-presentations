@@ -21,7 +21,12 @@
     <script>
       var slideshow = remark.create({
         ratio: "16:9",
-        slideNumberFormat: "%current%"
+        slideNumberFormat: "%current%",
+        {% if site.theme == "light" %}
+        highlightStyle: "github"
+        {% else %}
+        highlightStyle: "tomorrow-night"
+        {% endif %}
       });
     </script>
   </body>
