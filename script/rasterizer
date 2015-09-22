@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# Count "---" in slides.md, plus two (first & last)
+max=$((`cat slides.md | grep "\-\-\-" | wc -l`+2))
+joiner="convert "
+
+for i in `seq 1 ${max}`; #15
+do
+  padded=$i
+  if test $padded -lt 10; then
+    padded="0${padded}"
+  fi
+
+  echo "Generating slide_${padded}.png..."
+  phantomjs script/rasterize.js "http://localhost:4000/#${i}" tmp/slide_${padded}.png "1280px*720px"
+  joiner="${joiner} tmp/slide_${padded}.png "
+done
+
+echo "Merging into slides.pdf"
+`${joiner} slides.pdf`

@@ -1,2 +1,3 @@
 # Choose your theme. "light" or "dark"
 theme: light
+exclude: [script, tmp]
